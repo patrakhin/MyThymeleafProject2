@@ -1,9 +1,9 @@
-package ru.patrakhin.mythymeleafproject.service;
+package ru.patrakhin.mythymeleafproject2.service;
 
-import ru.patrakhin.mythymeleafproject.model.User;
-import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.patrakhin.mythymeleafproject.repository.UserRepository;
+import org.springframework.stereotype.Service;
+import ru.patrakhin.mythymeleafproject2.model.User;
+import ru.patrakhin.mythymeleafproject2.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
+    public User findByUserId(long id) {
+        return userRepository.findByUserId(id);
     }
 }

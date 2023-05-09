@@ -1,8 +1,8 @@
-package ru.patrakhin.mythymeleafproject.service;
+package ru.patrakhin.mythymeleafproject2.service;
 
-import ru.patrakhin.mythymeleafproject.model.User;
+import ru.patrakhin.mythymeleafproject2.model.User;
 
 public interface UserService {
     User createUser(String username, String password);
-    User findByUsername(String username);
+    User findByUserId(long id);
 }

@@ -1,8 +1,8 @@
-package ru.patrakhin.mythymeleafproject.repository;
+package ru.patrakhin.mythymeleafproject2.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.patrakhin.mythymeleafproject.model.User;
+import ru.patrakhin.mythymeleafproject2.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-    User findByUsername(String username);
+    User findByUserId(long id);
 }
