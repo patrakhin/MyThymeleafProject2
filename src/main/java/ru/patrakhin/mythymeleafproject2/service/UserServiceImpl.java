@@ -14,13 +14,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public User createUser(String username, String password) {
         User user = new User();
-        user.setUsername(username);
+        user.setName(username);
         user.setPassword(password);
         return userRepository.save(user);
     }
 
+
+
     @Override
-    public User findByUserId(long id) {
-        return userRepository.findByUserId(id);
+    public User findById(long id) {
+        return userRepository.findById(id);
     }
 }

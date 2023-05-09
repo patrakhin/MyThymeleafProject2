@@ -4,5 +4,5 @@ import ru.patrakhin.mythymeleafproject2.model.User;
 
 public interface UserService {
     User createUser(String username, String password);
-    User findByUserId(long id);
+    User findById(long id);
 }
